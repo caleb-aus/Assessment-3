@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!-- Declares HTML5 so the browser interprets the document using modern HTML standards. -->
+<html lang="en">
+<!-- Opens the document and identifies English as the primary language for accessibility tools. -->
+<head>
+<!-- Begins the metadata area, which contains settings and linked resources rather than visible page content. -->
+  <meta charset="UTF-8">
+  <!-- Uses UTF-8 so punctuation, symbols, and international characters display correctly. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Makes the layout use the device width and scale correctly on phones, tablets, and desktops. -->
+  <title>Illawarra Solar Project | CACS114</title>
+  <!-- Sets the text displayed in the browser tab and used as the page title by search engines. -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Loads the external stylesheet that controls colours, spacing, typography, layout, and responsiveness. -->
+</head>
+<!-- Closes the metadata area before the visible document body begins. -->
+<body>
+<!-- Opens the visible page content that users interact with in the browser. -->
+  <header class="site-header">
+  <!-- Creates the sticky top navigation bar that remains visible while the page is scrolled. -->
+    <a href="#home" class="brand">ILLAWARRA SOLAR PROJECT</a>
+    <!-- Makes the project name a link that returns the visitor to the home section. -->
+    <nav aria-label="Main navigation">
+    <!-- Groups the primary navigation links and gives screen readers a clear navigation label. -->
+      <a href="#home">Home</a>
+      <!-- Links to the hero area at the beginning of the website. -->
+      <a href="#gallery">Gallery</a>
+      <!-- Links directly to the photo gallery section. -->
+      <a href="#map">Map</a>
+      <!-- Links directly to the interactive Illawarra map section. -->
+      <a href="#contact">Contact</a>
+      <!-- Links directly to the contact information section. -->
+    </nav>
+    <!-- Closes the group of primary navigation links. -->
+  </header>
+  <!-- Closes the sticky website header. -->
+
+  <main>
+  <!-- Contains the main content of the website, excluding the navigation header and footer. -->
+    <section id="home" class="hero">
+    <!-- Creates the home section and applies the two-column desktop hero layout from the stylesheet. -->
+      <div class="hero-image">
+      <!-- Holds the project image on the left side of the desktop hero layout. -->
+        <img src="images/solar-image-1.jpg" alt="Solar panels">
+        <!-- Displays the main solar-energy image and supplies alternative text for screen readers. -->
+      </div>
+      <!-- Closes the hero image container. -->
+      <div class="hero-copy">
+      <!-- Holds the project title, introductory description, call-to-action, and immediately visible video. -->
+        <p class="eyebrow">CACS114</p>
+        <!-- Displays the course identifier as a small uppercase label above the main heading. -->
+        <h1>ILLAWARRA<br><span>SOLAR</span></h1>
+        <!-- Displays the main project heading, with a line break and a separately styled SOLAR word. -->
+        <p>Exploring solar energy and community perspectives across the Illawarra.</p>
+        <!-- Provides a short explanation of the website's subject and community-focused purpose. -->
+        <div class="home-video video-frame">
+        <!-- Creates the video container inside the hero so the video is visible immediately on the home screen. -->
+          <iframe
+          <!-- Begins an embedded YouTube frame that displays the project video without requiring a separate film section. -->
+            src="https://www.youtube.com/embed/rDBXmrMwHP0"
+            <!-- Specifies the YouTube video URL that will be rendered inside the embedded player. -->
+            title="Illawarra Solar Project video"
+            <!-- Gives the embedded player a descriptive accessible title. -->
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            <!-- Permits standard YouTube playback features supported by the browser. -->
+            allowfullscreen></iframe>
+            <!-- Allows the visitor to expand the embedded video to full-screen mode. -->
+        </div>
+        <!-- Closes the home-page video container. -->
+        <p class="small-note">Video placeholder — replace the YouTube link with the final project film.</p>
+        <!-- Explains that the current video is a placeholder and identifies what should be replaced later. -->
+        <a class="button" href="#introduction">Explore the project ↓</a>
+        <!-- Provides a call-to-action that moves the visitor to the introduction content below the hero. -->
+      </div>
+      <!-- Closes the hero text and video container. -->
+    </section>
+    <!-- Closes the home hero section. -->
+
+    <section id="introduction" class="section intro">
+    <!-- Creates the introduction section that the home-page call-to-action points toward. -->
+      <div class="section-heading">
+      <!-- Groups the introduction label and heading so they share consistent heading spacing. -->
+        <p class="eyebrow">1 — INTRODUCTION</p>
+        <!-- Labels the first content section with its sequence number and title. -->
+        <h2>Community voices in the Illawarra</h2>
+        <!-- Introduces the community perspective that frames the project. -->
+      </div>
+      <!-- Closes the introduction heading container. -->
+      <div class="intro-content">
+      <!-- Creates the two-column introduction layout containing text and a supporting image. -->
+        <p>Place holder.</p>
+        <!-- Provides temporary introduction copy that can be replaced with the final project description. -->
+        <img src="images/solar-image-2.jpg" alt="Solar panels in the community">
+        <!-- Displays a supporting image and describes it for users who cannot see the image. -->
+      </div>
+      <!-- Closes the introduction content layout. -->
+    </section>
+    <!-- Closes the introduction section. -->
+
+    <section id="gallery" class="section">
+    <!-- Creates the photo gallery section and applies the shared section spacing styles. -->
+      <div class="section-heading">
+      <!-- Groups the gallery label and heading into one consistent heading block. -->
+        <p class="eyebrow">2 — PHOTO GALLERY</p>
+        <!-- Identifies this as the second major content section after the introduction. -->
+        <h2>Solar Energy in Illawarra</h2>
+        <!-- States the subject of the collection of project photographs. -->
+      </div>
+      <!-- Closes the gallery heading container. -->
+      <div class="gallery" id="galleryGrid">
+      <!-- Creates the responsive grid that holds each clickable gallery image. -->
+        <button class="gallery-item" type="button"><img src="images/solar-image-3.jpg" alt="Solar energy image 1"></button>
+        <!-- Makes the first gallery image keyboard-accessible and clickable for the lightbox. -->
+        <button class="gallery-item" type="button"><img src="images/solar-image-4.jpg" alt="Solar energy image 2"></button>
+        <!-- Makes the second gallery image open in the shared lightbox when selected. -->
+        <button class="gallery-item" type="button"><img src="images/solar-image-5.jpg" alt="Solar energy image 3"></button>
+        <!-- Adds the third image as an interactive gallery item. -->
+        <button class="gallery-item" type="button"><img src="images/solar-image-6.jpg" alt="Solar energy image 4"></button>
+        <!-- Adds the fourth image as an interactive gallery item. -->
+        <button class="gallery-item" type="button"><img src="images/solar-image-7.jpg" alt="Solar energy image 5"></button>
+        <!-- Adds the fifth image as an interactive gallery item. -->
+        <button class="gallery-item" type="button"><img src="images/solar-image-8.jpg" alt="Solar energy image 6"></button>
+        <!-- Adds the sixth image as an interactive gallery item. -->
+        <button class="gallery-item" type="button"><img src="images/solar-image-9.jpg" alt="Solar energy image 7"></button>
+        <!-- Adds the seventh image as an interactive gallery item. -->
+        <button class="gallery-item" type="button"><img src="images/solar-image-10.jpg" alt="Solar energy image 8"></button>
+        <!-- Adds the eighth image as an interactive gallery item. -->
+        <button class="gallery-item" type="button"><img src="images/solar-image-11.jpg" alt="Solar energy image 9"></button>
+        <!-- Adds the ninth image as an interactive gallery item. -->
+      </div>
+      <!-- Closes the gallery grid. -->
+      <p class="small-note">Click image to enlarge.</p>
+      <!-- Tells visitors that selecting an image opens a larger lightbox view. -->
+    </section>
+    <!-- Closes the photo gallery section. -->
+
+    <section id="map" class="section map-section">
+    <!-- Creates the interactive map section and applies the contrasting background colour. -->
+      <div class="section-heading">
+      <!-- Groups the map label and heading into a consistent heading block. -->
+        <p class="eyebrow">3 — INTERACTIVE MAP</p>
+        <!-- Identifies this as the third major content section. -->
+        <h2>Illawarra Region</h2>
+        <!-- Names the geographic area represented by the embedded map. -->
+      </div>
+      <!-- Closes the map heading container. -->
+      <div class="map-wrap">
+      <!-- Provides a fixed-height responsive frame for the embedded OpenStreetMap display. -->
+        <iframe
+        <!-- Begins the embedded map frame. -->
+          title="Interactive map of Illawarra, NSW"
+          <!-- Gives the map an accessible description for screen-reader users. -->
+          src="https://www.openstreetmap.org/export/embed.html?bbox=150.72%2C-34.75%2C151.02%2C-34.20&layer=mapnik"></iframe>
+          <!-- Loads the selected Illawarra map area using OpenStreetMap's embed endpoint. -->
+      </div>
+      <!-- Closes the embedded map container. -->
+      <a class="map-link" href="https://www.openstreetmap.org/#map=11/-34.45/150.85" target="_blank" rel="noopener">Open larger map ↗</a>
+      <!-- Opens a larger interactive map in a new tab while preventing the new page from accessing the opener. -->
+    </section>
+    <!-- Closes the interactive map section. -->
+
+    <section id="contact" class="section contact">
+    <!-- Creates the contact section where visitors can find project enquiry details. -->
+      <div class="section-heading">
+      <!-- Groups the contact label and heading into a consistent heading block. -->
+        <p class="eyebrow">4 — CONTACT US</p>
+        <!-- Identifies this as the fourth major content section. -->
+        <h2>Get in touch</h2>
+        <!-- Presents the purpose of the contact area in a short heading. -->
+      </div>
+      <!-- Closes the contact heading container. -->
+      <div class="contact-card">
+      <!-- Creates a visually distinct card for the project contact information. -->
+        <p>For project enquiries, interview information or collaboration opportunities, please reach out to us via</p>
+        <!-- Explains the types of enquiries that the listed contact details are intended to support. -->
+        <div class="contact-details">
+        <!-- Groups the phone number and email address for consistent spacing. -->
+          <p><strong>Phone:</strong> 0000000000</p>
+          <!-- Displays the temporary project telephone contact. -->
+          <p><strong>Email:</strong> UOW@example.com</p>
+          <!-- Displays the temporary project email contact. -->
+        </div>
+        <!-- Closes the contact details group. -->
+      </div>
+      <!-- Closes the contact card. -->
+    </section>
+    <!-- Closes the contact section. -->
+  </main>
+  <!-- Closes the main content area. -->
+
+  <footer>Illawarra Solar Project 2026</footer>
+  <!-- Displays the project name and year at the bottom of the page. -->
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+  <!-- Creates the hidden overlay used to show an enlarged gallery image. -->
+    <button class="close" id="closeLightbox" type="button" aria-label="Close image">×</button>
+    <!-- Provides a clearly labelled button for closing the image overlay. -->
+    <img id="lightboxImage" src="" alt="">
+    <!-- Holds the selected gallery image; its source and alternative text are assigned by JavaScript. -->
+  </div>
+  <!-- Closes the lightbox overlay. -->
+
+  <script src="script.js"></script>
+  <!-- Loads the JavaScript that controls gallery opening, closing, and keyboard interaction. -->
+</body>
+<!-- Closes the visible page content. -->
+</html>
+<!-- Closes the complete HTML document. -->
